@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <DockerPublishLocally>False</DockerPublishLocally>
+    <ProjectGuid>a2aa35b8-fa5c-48df-b107-c142d767c299</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/weatherforecast</DockerServiceUrl>
+    <DockerServiceName>server</DockerServiceName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".docker\nginx\dist\assets\index-CKRSZtL0.js" />
+    <None Include=".docker\nginx\dist\assets\index-DiwrgTda.css" />
+    <None Include=".docker\nginx\dist\assets\react-CHdo91hT.svg" />
+    <None Include=".docker\nginx\dist\index.html" />
+    <None Include=".docker\nginx\dist\vite.svg" />
+    <None Include=".docker\nginx\Dockerfile" />
+    <None Include=".docker\nginx\nginx.conf" />
+    <None Include=".docker\nginx\proxy.conf" />
+    <None Include="docker-compose.override.yml">
+      <DependentUpon>docker-compose.yml</DependentUpon>
+    </None>
+    <None Include="docker-compose.yml" />
+    <None Include=".dockerignore" />
+  </ItemGroup>
+</Project>
